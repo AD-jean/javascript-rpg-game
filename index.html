@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RPG Creature Search</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>⚔️ RPG Creature Search</h1>
+
+  <div class="search-box">
+    <input type="text" id="search-input" placeholder="Name or ID..." required />
+    <button id="search-button">Search</button>
+  </div>
+
+  <div id="creature-card">
+    <div class="creature-header">
+      <div id="creature-name"></div>
+      <div id="creature-id"></div>
+    </div>
+    <img id="creature-img" src="" alt="creature" />
+    <div id="types"></div>
+    <div class="phys-info">
+      <div id="weight"></div>
+      <div id="height"></div>
+    </div>
+    <div class="info-grid">
+      <div class="info-box"><div class="info-label">HP</div><div class="info-value" id="hp"></div></div>
+      <div class="info-box"><div class="info-label">Attack</div><div class="info-value" id="attack"></div></div>
+      <div class="info-box"><div class="info-label">Defense</div><div class="info-value" id="defense"></div></div>
+      <div class="info-box"><div class="info-label">Sp. Attack</div><div class="info-value" id="special-attack"></div></div>
+      <div class="info-box"><div class="info-label">Sp. Defense</div><div class="info-value" id="special-defense"></div></div>
+      <div class="info-box"><div class="info-label">Speed</div><div class="info-value" id="speed"></div></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
